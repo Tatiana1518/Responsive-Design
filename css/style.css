@@ -1,0 +1,61 @@
+header,
+.page,
+footer {
+  min-height: 200px;
+  background: grey;
+}
+
+.menu {
+    min-height: 200px;
+    display: inline-block;
+    background: blue;
+    width: 30%;
+}
+
+.content {
+    min-height: 200px;
+    display: inline-block;
+    background: lightgrey;
+    width: 70%;
+}
+
+.page {
+    display: flex;
+}
+
+@media (max-width: 600px) {
+    .menu {
+      background: red;
+      width: 100%;
+    }
+
+    .content{
+      background: green;
+      width: 100%;
+    }
+}
+
+@media (width <= 600px) {
+    .page {
+      display: block;
+    }
+
+    .content{
+      width: 100%;
+      background: lime;
+    }
+
+    .menu{
+        width: 100%;
+        background: yellow;
+      }
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+    .menu {
+      background: red;
+    }
+    .content {
+        background: pink;
+    }
+  }
